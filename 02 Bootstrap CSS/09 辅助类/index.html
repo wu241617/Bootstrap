@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-primary">文本</h3>
+				以下不同的类展示了不同的文本颜色。如果文本是个链接鼠标移动到文本上会变暗：
+				<br>
+				1,.text-muted	"text-muted" 类的文本样式	 <br>
+				2,.text-primary	"text-primary" 类的文本样式	 <br>
+				3,.text-success	"text-success" 类的文本样式	<br>
+				4,.text-info	"text-info" 类的文本样式	<br>
+				5,.text-warning	"text-warning" 类的文本样式	<br>
+				6,.text-danger	"text-danger" 类的文本样式 <br>
+			</div>
+			<div>
+				<h3 class="text-primary bg-danger">背景</h3>
+				以下不同的类展示了不同的背景颜色。 如果文本是个链接鼠标移动到文本上会变暗：
+				<br>
+				1,.bg-primary	表格单元格使用了 "bg-primary" <br>
+				2,.bg-success	表格单元格使用了 "bg-success" <br>
+				3,.bg-info	表格单元格使用了 "bg-info" <br>
+				4,.bg-warning	表格单元格使用了 "bg-warning" <br>
+				5,.bg-danger	表格单元格使用了 "bg-danger" 
+			</div>
+			<div>
+				<h3 class="text-primary">其他</h3>
+				1,.pull-left	元素浮动到左边<br>
+				2,.pull-right	元素浮动到右边<br>
+				3,.center-block	设置元素为 display:block 并居中显示	<br>
+				4,.clearfix	清除浮动	<br>
+				5,.show	强制元素显示	<br>
+				6,.hidden	强制元素隐藏	<br>
+				7,.sr-only	除了屏幕阅读器外，其他设备上隐藏元素	<br>
+				8,.sr-only-focusable	与 .sr-only 类结合使用，在元素获取焦点时显示(如：键盘操作的用户)	<br>
+				9,.text-hide	将页面元素所包含的文本内容替换为背景图	<br>
+				10,.close	显示关闭按钮	<br>
+				11,.caret	显示下拉式功能<br>
+			</div>
+			<div>
+				<h3 class="text-primary">关闭图标</h3>
+				使用通用的关闭图标来关闭模态框和警告框。使用 class close 得到关闭图标。
+				<p>关闭图标实例   
+				  <button type="button" class="close" aria-hidden="true">&times;    </button>
+			    </p>
+			</div>
+			<div>
+				<h3 class="text-primary">插入符</h3>
+				使用插入符表示下拉功能和方向。使用带有 class caret 的 <span> 元素得到该功能
+				<p>插入符实例   
+				   <span class="caret"></span>
+				</p>
+			</div>
+			<div>
+				<h3 class="text-primary">快速浮动</h3>
+				您可以分别使用 class pull-left 或 pull-right 来把元素向左或向右浮动。
+				如需对齐导航栏中的组件，请使用 .navbar-left 或 .navbar-right 代替
+				<br>
+				<div class="pull-left">向左快速浮动</div>
+				<div class="pull-right">向右快速浮动</div>
+			</div>
+			<div>
+				<h3 class="text-primary">内容居中</h3>
+				使用 class center-block 来居中元素
+				<div class="row">
+				   <div class="center-block" style="width:200px;background-color:red;">这是 center-block 实例</div>
+			    </div>
+			</div>
+			<div>
+				<h3 class="text-primary">清除浮动</h3>
+				如需清除元素的浮动，请使用 .clearfix class
+				<div class="clearfix"  style="background: #D8D8D8;border: 1px solid #000;padding: 10px;">
+				   <div class="pull-left" style="background:#58D3F7;">向左快速浮动   </div>
+				   <div class="pull-right" style="background: #DA81F5;">向右快速浮动   </div>
+				</div>
+			</div>
+			<div>
+				<h3 class="text-primary">显示和隐藏内容</h3>
+				您可以通过使用 class .show 和 .hidden 来强行设置元素显示或隐藏（包括屏幕阅读器）
+				<div class="row" style="padding: 91px 100px 19px 50px;">
+				   <div class="show" style="left-margin:10px;width:300px;background-color:#ccc;">这是 show class 的实例</div>
+				   <div class="hidden" style="width:200px;background-color:#ccc;">这是 hide class 的实例</div>
+				</div>
+			</div>
+			<div>
+				<h3 class="text-primary">屏幕阅读器</h3>
+				您可以通过使用 class .sr-only 来把元素对所有设备隐藏，除了屏幕阅读器。
+				<div class="row" style="padding: 91px 100px 19px 50px;">
+				   <form class="form-inline" role="form">
+				   <div class="form-group">
+				      <label class="sr-only" for="email">Email 地址</label>
+				      <input type="email" class="form-control" placeholder="Enter email">
+				   </div>
+				   <div class="form-group">
+				      <label class="sr-only" for="pass">密码</label>
+				      <input type="password" class="form-control" placeholder="Password">
+				   </div>
+				   </form>
+				 </div>
+			</div>
+		</div>
+		
+	</body>
+</html>

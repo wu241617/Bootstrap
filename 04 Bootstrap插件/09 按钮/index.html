@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 按钮（Button）插件</h3>
+				通过按钮（Button）插件，您可以添加进一些交互，比如控制按钮状态，或者为其他组件（如工具栏）创建按钮组。
+			</div>
+
+			<div>
+				<h3 class="text-primary">加载状态</h3>
+				如需向按钮添加加载状态，只需要简单地向 button 元素添加 data-loading-text="Loading..." 作为其属性即可<br>
+				<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." type="button"> 加载状态</button>
+				<!--script>
+					$(function() { 
+				    $(".btn").click(function(){
+				       $(this).button('loading').delay(1000).queue(function() {
+				         // $(this).button('reset');
+				       });        
+				    });
+				 });  
+				 </script-->
+			</div>
+
+			<div>
+				<h3 class="text-primary">单个切换</h3>
+				如需激活单个按钮的切换（即改变按钮的正常状态为按压状态，反之亦然）
+				，只需向 button 元素添加 data-toggle="button" 作为其属性即可<br>
+
+				<button type="button" class="btn btn-primary" data-toggle="button"> 单个切换</button>
+			</div>
+
+			<div>
+				<h3 class="text-primary">复选框（Checkbox）</h3>
+				您可以创建复选框组，并通过向 btn-group 添加 data 属性 data-toggle="buttons" 来添加复选框组的切换。<br>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary"><input type="checkbox"> 选项 1 </label>
+					<label class="btn btn-primary"><input type="checkbox"> 选项 2 </label>
+					<label class="btn btn-primary"><input type="checkbox"> 选项 3 </label>
+			    </div>
+			</div>
+
+           
+		   <div>
+		   	<h3 class="text-primary">单选框（Radio）</h3>
+		   	您可以创建复选框组，并通过向 btn-group 添加 data 属性 data-toggle="buttons" 来添加复选框组的切换。<br>
+				<div class="btn-group" data-toggle="buttons">
+				   <label class="btn btn-primary"><input type="radio" name="options" id="option1"> 选项 1   </label>
+				   <label class="btn btn-primary"> <input type="radio" name="options" id="option2"> 选项 2   </label>
+				   <label class="btn btn-primary"><input type="radio" name="options" id="option3"> 选项 3   </label>
+				</div>
+		   </div>
+		   
+		</div>
+
+	</body>
+</html>

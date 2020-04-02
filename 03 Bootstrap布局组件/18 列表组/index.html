@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 列表组</h3>
+				列表组件用于以列表形式呈现复杂的和自定义的内容。创建一个基本的列表组的步骤如下：<br>
+				1,向元素 ul> 添加 class .list-group。<br>
+				2,向 li> 添加 class .list-group-item。
+
+				<ul class="list-group">
+					<li class="list-group-item">免费域名注册</li>
+					<li class="list-group-item">免费 Window 空间托管</li>
+					<li class="list-group-item">图像的数量</li>
+					<li class="list-group-item">24*7 支持</li>
+					<li class="list-group-item">每年更新成本</li>
+				</ul>
+
+			</div>
+
+			<div>
+				<h3 class="text-primary">向列表组添加徽章</h3>
+				我们可以向任意的列表项添加徽章组件，它会自动定位到右边。
+				只需要在 li> 元素中添加 span class="badge"> 即可<br>
+
+				<ul class="list-group">
+					<li class="list-group-item">免费域名注册</li>
+					<li class="list-group-item">免费 Window 空间托管</li>
+					<li class="list-group-item">图像的数量</li>
+					<li class="list-group-item">
+						<span class="badge">新</span>
+						24*7 支持
+					</li>
+					<li class="list-group-item">每年更新成本</li>
+					<li class="list-group-item">
+						<span class="badge">新</span>
+						折扣优惠
+					</li>
+				</ul>
+			</div>
+
+
+           <div>
+			   <h3 class="text-primary">>向列表组添加链接</h3>
+			   通过使用锚标签代替列表项，我们可以向列表组添加链接。我们需要使用 div> 代替 ul> 元素 <br>
+			   
+			   <a href="#" class="list-group-item active">
+			      免费域名注册
+			   </a>
+			   <a href="#" class="list-group-item">24*7 支持</a>
+			   <a href="#" class="list-group-item">免费 Window 空间托管</a>
+			   <a href="#" class="list-group-item">图像的数量</a>
+			   <a href="#" class="list-group-item">每年更新成本</a>
+			   
+		   </div>
+		   
+		   <div>
+			   <h3 class="text-primary">向列表组添加自定义内容</h3>
+			   我们可以向上面已添加链接的列表组添加任意的 HTML 内容<br>
+			   
+			   <div class="list-group">
+			      <a href="#" class="list-group-item active">
+			         <h4 class="list-group-item-heading">
+			            入门网站包
+			         </h4>
+			      </a>
+			      <a href="#" class="list-group-item">
+			         <h4 class="list-group-item-heading">
+			            免费域名注册
+			         </h4>
+			         <p class="list-group-item-text">
+			            您将通过网页进行免费域名注册。
+			         </p>
+			      </a>
+			      <a href="#" class="list-group-item">
+			         <h4 class="list-group-item-heading">
+			            24*7 支持
+			         </h4>
+			         <p class="list-group-item-text">
+			            我们提供 24*7 支持。
+			         </p>
+			      </a>
+			   </div>
+			   
+			   <div class="list-group">
+			      <a href="#" class="list-group-item active">
+			         <h4 class="list-group-item-heading">
+			            商务网站包
+			         </h4>
+			      </a>
+			      <a href="#" class="list-group-item">
+			         <h4 class="list-group-item-heading">
+			            免费域名注册
+			         </h4>
+			         <p class="list-group-item-text">
+			            您将通过网页进行免费域名注册。
+			         </p>
+			      </a>
+			      <a href="#" class="list-group-item">
+			         <h4 class="list-group-item-heading">24*7 支持</h4>
+			         <p class="list-group-item-text">我们提供 24*7 支持。</p>
+			      </a>
+			   </div>
+			   
+
+		   </div>
+		   
+		</div>
+
+	</body>
+</html>

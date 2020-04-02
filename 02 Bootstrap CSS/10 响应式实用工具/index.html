@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h3 class="text-center text-primary">Bootstrap 响应式实用工具</h3>
+			Bootstrap 提供了一些辅助类，以便更快地实现对移动设备友好的开发。这些可以通过媒体查询结合大型、小型和中型设备，
+			实现内容对设备的显示和隐藏。需要谨慎使用这些工具，避免在同一个站点创建完全不同的版本。响应式实用工具目前只适用于块和表切换。
+			<p>
+				<table class="table table-striped">
+					<thead>
+						<tr class="hover">
+							<th></th>
+							<th>超小屏幕手机 (小于768px)</th>
+							<th>小屏幕平板 (≥768px)</th>
+							<th>中等屏幕桌面 (≥992px)</th>
+							<th>大屏幕桌面 (≥1200px)</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>.visible-xs-*</td>
+							<td>可见 </td>
+							<td>隐藏 </td>
+							<td>隐藏 </td>
+							<td>隐藏 </td>
+						</tr>
+						<tr>
+							<td>.visible-sm-*</td>
+							<td>隐藏 </td>
+							<td>可见</td>
+							<td>隐藏 </td>
+							<td>隐藏 </td>
+						</tr>
+						<tr>
+							<td>.visible-md-*</td>
+							<td>隐藏 </td>
+							<td>隐藏 </td>
+							<td>可见</td>
+							<td>隐藏 </td>
+						</tr>
+						<tr>
+							<td>.visible-lg-*</td>
+							<td>隐藏</td>
+							<td>隐藏</td>
+							<td>隐藏</td>
+							<td>可见</td>
+						</tr>
+						<tr>
+							<td>.hidden-xs</td>
+							<td>隐藏 </td>
+							<td>可见</td>
+							<td>可见</td>
+							<td>可见</td>
+						</tr>
+						<tr>
+							<td>.hidden-sm</td>
+							<td>可见</td>
+							<td>隐藏</td>
+							<td>可见</td>
+							<td>可见</td>
+						</tr>
+						<tr>
+							<td>.hidden-md</td>
+							<td>可见</td>
+							<td>可见</td>
+							<td>隐藏</td>
+							<td>可见</td>
+						</tr>
+						<tr>
+							<td>.hidden-lg</td>
+							<td>可见 </td>
+							<td>可见 </td>
+							<td>可见 </td>
+							<td>隐藏</td>
+						</tr>
+					</tbody>
+				</table>
+				<img src="img/1.png" alt="图片加载失败!" class="img-responsive">
+			</p>
+			<div class="container" style="padding: 40px;">
+				<div class="row visible-on">
+					<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+						<span class="hidden-xs">特别小型</span>
+						<span class="visible-xs">✔ 在特别小型设备上可见</span>
+					</div>
+					<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+						<span class="hidden-sm">小型</span>
+						<span class="visible-sm">✔ 在小型设备上可见</span>
+					</div>
+					<div class="clearfix visible-xs"></div>
+					<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+						<span class="hidden-md">中型</span>
+						<span class="visible-md">✔ 在中型设备上可见</span>
+					</div>
+					<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+						<span class="hidden-lg">大型</span>
+						<span class="visible-lg">✔ 在大型设备上可见</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

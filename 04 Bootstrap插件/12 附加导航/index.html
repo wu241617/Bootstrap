@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">	Bootstrap 附加导航（Affix）插件</h3>
+				附加导航（Affix）插件允许某个 div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。
+				一个常见的例子是社交图标。它们将在某个位置开始，但当页面点击某个标记，该 div> 会锁定在某个位置，
+				不会随着页面其他部分一起滚动。<br>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">用法</h3>
+				您可以通过 data 属性或者通过 JavaScript 来使用附加导航（Affix）插件。<br>
+				1,通过 data 属性：如需向元素添加附加导航（Affix）行为，只需要向需要监听的元素添加 data-spy="affix" 即可。
+				请使用偏移来定义何时切换元素的锁定和移动。<br>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">通过 CSS 定位</h3>
+				在上面两种使用附加导航（Affix）插件的方式中，您都必须通过 CSS 定位内容。
+				附加导航（Affix）插件在三种 class 之间切换，每种 class 都呈现了特定的状态： 
+				\.affix、.affix-top 和 .affix-bottom。请按照下面的步骤，来为这三种状态设置您自己的 CSS（不依赖此插件）。
+				在开始时，插件添加 .affix-top 来指示元素在它的最顶端位置。这个时候不需要任何的 CSS 定位。
+				当滚动经过添加了附加导航（Affix）的元素时，应触发实际的附加导航（Affix）。此时 .affix 会替代 
+				.affix-top，同时设置 position: fixed;（由 Bootstrap 的 CSS 代码提供）。
+				如果定义了底部偏移，当滚动到达该位置时，应把 .affix 替换为 .affix-bottom。
+				由于偏移是可选的，假如设置了该偏移，则要求同时设置适当的 CSS。在这种情况下，请在必要的时候添加 position: absolute;。<br>
+				<p class="text-danger bg-info">
+						data-offset	当 计算滚动位置时，距离顶部的偏移像素。如果设置了一个数字，则该偏移量的值将被应用在顶部和底部。
+						如果设置了一个对象偏移，则其值形如 offset: { top: 10 } 或 offset: { top: 10, bottom: 5 }。如果需要动态计算偏移，
+						请使用函数
+				</p>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

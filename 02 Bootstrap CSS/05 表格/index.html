@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary ">Bootstrap 表格</h3>
+				Bootstrap 提供了一个清晰的创建表格的布局. Bootstrap 支持的一些表格元素：<br>
+				1,table	为表格添加基础样式。<br>
+				2,thead	表格标题行的容器元素（tr），用来标识表格列。<br>
+				3,tbody	表格主体中的表格行的容器元素（tr）。<br>
+				4,tr	一组出现在单行上的表格单元格的容器元素（td 或 th）。<br>
+				5,td	默认的表格单元格。<br>
+				6,th	特殊的表格单元格，用来标识列或行（取决于范围和位置）。必须在 thead 内使用。<br>
+				7,caption	关于表格存储内容的描述或总结。<br>
+				<p>
+					<span class="btn btn-block btn-primary">表格类</span><br>
+					1,.table	为任意 table 添加基本样式 (只有横向分隔线) <br>		
+					2,.table-striped	在 tbody 内添加斑马线形式的条纹 ( IE8 不支持) <br>
+					3,.table-bordered	为所有表格的单元格添加边框	<br>
+					4,.table-hover	    在 tbody 内的任一行启用鼠标悬停状态	 <br>
+					5,.table-condensed	让表格更加紧凑
+				</p>
+				<p>
+					<span class="btn btn-block btn-primary">tr,th,td类</span>
+					1,.active	将悬停的颜色应用在行或者单元格上	<br>
+					2,.success	表示成功的操作	<br>
+					3,.info	表示信息变化的操作	<br>
+					4,.warning	表示一个警告的操作	<br>
+					5,.danger	表示一个危险的操作
+				</p>
+				<p>
+					<span class="btn btn-block btn-primary">基本的表格</span>
+					<table class="table ">
+						<caption>基本的表格</caption>
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>学号</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>吴彦</td>
+								<td>22</td>
+								<td>1001</td>
+							</tr>
+							<tr>
+								<td>王龙</td>
+								<td>21</td>
+								<td>1002</td>
+							</tr>
+							<tr>
+								<td>周定</td>
+								<td>19</td>
+								<td>1003</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+				
+				<p>
+					<span class="btn btn-block btn-primary">条纹表格</span>
+					<table class="table table-striped">
+						<caption>条纹表格</caption>
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>学号</th>
+								<th>数学</th>
+								<th>语文</th>
+								<th>英语</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>吴彦</td>
+								<td>22</td>
+								<td>1001</td>
+								<td>103</td>
+								<td>63</td>
+								<td>54</td>
+							</tr>
+							<tr>
+								<td>王龙</td>
+								<td>21</td>
+								<td>1002</td>
+								<td>99</td>
+								<td>106</td>
+								<td>48</td>
+							</tr>
+							<tr>
+								<td>周定</td>
+								<td>19</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+							<tr>
+								<td>文化</td>
+								<td>12</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+				<p>
+					<span class="btn btn-block btn-primary">边框表格</span>
+					<table class="table table-bordered">
+						<caption>边框表格</caption>
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>学号</th>
+								<th>数学</th>
+								<th>语文</th>
+								<th>英语</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>吴彦</td>
+								<td>22</td>
+								<td>1001</td>
+								<td>103</td>
+								<td>63</td>
+								<td>54</td>
+							</tr>
+							<tr>
+								<td>王龙</td>
+								<td>21</td>
+								<td>1002</td>
+								<td>99</td>
+								<td>106</td>
+								<td>48</td>
+							</tr>
+							<tr>
+								<td>周定</td>
+								<td>19</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+							<tr>
+								<td>文化</td>
+								<td>12</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+				<p>
+					<span class="btn btn-block btn-primary">悬停表格</span>
+					<table class="table table-hover">
+						<caption>悬停表格</caption>
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>学号</th>
+								<th>数学</th>
+								<th>语文</th>
+								<th>英语</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>吴彦</td>
+								<td>22</td>
+								<td>1001</td>
+								<td>103</td>
+								<td>63</td>
+								<td>54</td>
+							</tr>
+							<tr>
+								<td>王龙</td>
+								<td>21</td>
+								<td>1002</td>
+								<td>99</td>
+								<td>106</td>
+								<td>48</td>
+							</tr>
+							<tr>
+								<td>周定</td>
+								<td>19</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+							<tr>
+								<td>文化</td>
+								<td>12</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+				<p>
+					<span class="btn btn-block btn-primary">精简表格</span>
+					<table class="table table-condensed">
+						<caption>精简表格</caption>
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>学号</th>
+								<th>数学</th>
+								<th>语文</th>
+								<th>英语</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>吴彦</td>
+								<td>22</td>
+								<td>1001</td>
+								<td>103</td>
+								<td>63</td>
+								<td>54</td>
+							</tr>
+							<tr>
+								<td>王龙</td>
+								<td>21</td>
+								<td>1002</td>
+								<td>99</td>
+								<td>106</td>
+								<td>48</td>
+							</tr>
+							<tr>
+								<td>周定</td>
+								<td>19</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+							<tr>
+								<td>文化</td>
+								<td>12</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+				<p>
+					<span class="btn btn-block btn-primary">上下文表格</span>
+					<table class="table table-hover">
+						<caption>上下文表格</caption>
+						<thead>
+							<tr class="active">
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>学号</th>
+								<th>数学</th>
+								<th>语文</th>
+								<th>英语</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="success">
+								<td>吴彦</td>
+								<td>22</td>
+								<td>1001</td>
+								<td>103</td>
+								<td>63</td>
+								<td>54</td>
+							</tr>
+							<tr class="danger">
+								<td>王龙</td>
+								<td>21</td>
+								<td>1002</td>
+								<td>99</td>
+								<td>106</td>
+								<td>48</td>
+							</tr>
+							<tr class="warning">
+								<td>周定</td>
+								<td>19</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+							<tr class="info">
+								<td>文化</td>
+								<td>12</td>
+								<td>1003</td>
+								<td>69</td>
+								<td>65</td>
+								<td>150</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+			</div>
+			<div>
+				<h3 class="text-center text-primary ">响应式表格</h3>
+				通过把任意的 .table 包在 .table-responsive class 内，您可以让表格水平滚动以适应小型设备（小于 768px）。
+				当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。
+				<div class="table-responsive">
+				   <table class="table">
+				      <caption>响应式表格布局</caption>
+				      <thead>
+				         <tr>
+				            <th>产品</th>
+				            <th>付款日期</th>
+				            <th>状态</th>
+				         </tr>
+				      </thead>
+				      <tbody>
+				         <tr>
+				            <td>产品1</td>
+				            <td>23/11/2013</td>
+				            <td>待发货</td>
+				         </tr>
+				         <tr>
+				            <td>产品2</td>
+				            <td>10/11/2013</td>
+				            <td>发货中</td>
+				         </tr>
+				         <tr>
+				            <td>产品3</td>
+				            <td>20/10/2013</td>
+				            <td>待确认</td>
+				         </tr>
+				         <tr>
+				            <td>产品4</td>
+				            <td>20/10/2013</td>
+				            <td>已退货</td>
+				         </tr>
+				      </tbody>
+				   </table>
+				  </div> 
+			</div>
+		</div>
+		
+	</body>
+</html>

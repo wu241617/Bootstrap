@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 下拉菜单（Dropdown）插件</h3>
+				Bootstrap 下拉菜单 这一章讲解了下拉菜单，但是没有涉及到交互部分，本章将具体讲解下拉菜单的交互。
+				使用下拉菜单（Dropdown）插件，您可以向任何组件（比如导航栏、标签页、胶囊式导航菜单、按钮等）添加下拉菜单。<br>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">用法</h3>
+				您可以切换下拉菜单（Dropdown）插件的隐藏内容：<br>
+				1,通过 data 属性：向链接或按钮添加 data-toggle="dropdown" 来切换下拉菜单
+				如果您需要保持链接完整（在浏览器不启用 JavaScript 时有用），请使用 data-target 属性代替 href="#"：<br>
+				2,通过 JavaScript：通过 JavaScript 调用下拉菜单切换，请使用下面的方法：$('.dropdown-toggle').dropdown()
+			</div>
+			
+			
+			<div>
+				<nav class="navbar navbar-default" role="navigation">
+				   <div class="navbar-header">
+				      <a class="navbar-brand" href="#">W3Cschool</a>
+				   </div>
+				   <div>
+				      <ul class="nav navbar-nav">
+				         <li class="active"><a href="#">iOS</a></li>
+				         <li><a href="#">SVN</a></li>
+				         <li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				               Java 
+				               <b class="caret"></b>
+				            </a>
+				            <ul class="dropdown-menu">
+				               <li><a href="#">jmeter</a></li>
+				               <li><a href="#">EJB</a></li>
+				               <li><a href="#">Jasper Report</a></li>
+				               <li class="divider"></li>
+				               <li><a href="#">分离的链接</a></li>
+				               <li class="divider"></li>
+				               <li><a href="#">另一个分离的链接</a></li>
+				            </ul>
+				         </li>
+				      </ul>
+				   </div>
+				</nav>
+			</div>
+			
+			<div>
+				<nav class="navbar navbar-default" role="navigation">
+				   <div class="navbar-header">
+				      <a class="navbar-brand" href="#">W3Cschool</a>
+				   </div>
+				
+				   <div id="myexample">
+				      <ul class="nav navbar-nav">
+				         <li class="active"><a href="#">iOS</a></li>
+				         <li><a href="#">SVN</a></li>
+				         <li class="dropdown">
+				            <a href="#" class="dropdown-toggle">Java <b                 class="caret"></b></a>
+				               <ul class="dropdown-menu">
+				                  <li><a id="action-1" href="#">
+				                     jmeter</a>
+				                  </li>
+				                  <li><a href="#">EJB</a></li>
+				                  <li><a href="#">Jasper Report</a></li>
+				                  <li class="divider"></li>
+				                  <li><a href="#">分离的链接</a></li>
+				                  <li class="divider"></li>
+				                  <li><a href="#">另一个分离的链接</a></li>
+				               </ul>
+				            </li>
+				         </ul>
+				      </div>
+				   </nav>
+				</div>
+			
+		</div>
+		<script>
+			   $(function(){
+			      $(".dropdown-toggle").dropdown('toggle');
+			      }); 
+			</script>
+		</div>
+	</body>
+</html>

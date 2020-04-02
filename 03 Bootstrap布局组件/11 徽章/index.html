@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 徽章（Badges）</h3>
+				本章将讲解 Bootstrap 徽章（Badges）。徽章与标签相似，主要的区别在于徽章的边角更加圆滑。
+				徽章（Badges）主要用于突出显示新的或未读的项。如需使用徽章，只需要把 span class="badge">
+				添加到链接、Bootstrap 导航等这些元素上即可。
+				当没有新的或未读的项时，通过 CSS 的 :empty 选择器，徽章会折叠起来，表示里边没有内容。<br>
+				
+				<a href="#">Mailbox <span class="badge">50</span></a>
+			</div>
+			
+			
+			<div>
+				<h3 class="text-primary">激活导航状态</h3>
+				您可以在激活状态的胶囊式导航和列表导航中放置徽章。通过使用 span class="badge"> 来激活链接，<br>
+				
+				<h4>胶囊式导航中的激活状态</h4>
+				<ul class="nav nav-pills">
+				   <li class="active"><a href="#">首页 <span class="badge">42</span></a></li>
+				   <li><a href="#">简介</a></li>
+				   <li><a href="#">消息 <span class="badge">3</span></a></li>
+				</ul>
+				<br>
+				
+				<h4>列表导航中的激活状态</h4>
+				<ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+				   <li class="active">
+				      <a href="#">
+				         <span class="badge pull-right">42</span>
+				         首页
+				      </a>
+				   </li>
+				   <li><a href="#">简介</a></li>
+				   <li>
+				      <a href="#">
+				         <span class="badge pull-right">3</span>
+				         消息
+				      </a>
+				   </li>
+				</ul>
+
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

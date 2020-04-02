@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 提示工具（Tooltip）插件</h3>
+				Bootstrap 提示工具（Tooltip）插件工具可以通过鼠标移动到选定的特定的元素上时，显示出相关的提示语。
+				当您想要描述一个链接的时候，提示工具（Tooltip）就显得非常有用。
+				提示工具（Tooltip）插件是受 Jason Frame 写的 jQuery.tipsy 的启发。提示工具（Tooltip）插件做了很多改进，
+				例如不需要依赖图像，而是改用 CSS 实现动画效果，用 data 属性存储标题信息。<br>
+			</div>
+
+			<div>
+				<h3 class="text-primary">用法</h3>
+				提示工具（Tooltip）插件根据需求生成内容和标记，默认情况下是把提示工具（tooltip）放在它们的触发元素后面。
+				您可以有以下两种方式添加提示工具（tooltip）： <br>
+				1,通过 data 属性：如需添加一个提示工具（tooltip），只需向一个锚标签添加 data-toggle="tooltip" 即可。
+				锚的 title 即为提示工具（tooltip）的文本。默认情况下，插件把提示工具（tooltip）设置在顶部
+				2,-->通过 JavaScript：通过 JavaScript 触发提示工具（tooltip）：$('#identifier').tooltip(options)<br>
+				<p class="text-success bg-info">
+						提示工具（Tooltip）插件不像之前所讨论的下拉菜单及其他插件那样，它不是纯 CSS 插件。如需使用该插件，
+						您必须使用 jquery 激活它（读取 javascript）。使用下面的脚本来启用页面中的所有的提示工具（tooltip）：
+						$(function () { $("[data-toggle='tooltip']").tooltip(); });
+				</p>
+			</div>
+
+			<div>
+				<h4>提示工具（Tooltip）插件 - 锚</h4>这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="默认的 Tooltip">
+					默认的 Tooltip</a>.
+				这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">
+					左侧的 Tooltip</a>.
+				这是一个 <a href="#" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">
+					顶部的 Tooltip</a>.
+				这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom" title="底部的 Tooltip">
+					底部的 Tooltip</a>.
+				这是一个 <a href="#" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">
+					右侧的 Tooltip</a><br>
+				<h4>提示工具（Tooltip）插件 - 按钮</h4><button type="button" class="btn btn-default" data-toggle="tooltip" title="默认的 Tooltip">
+					默认的 Tooltip</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left"
+				 title="左侧的 Tooltip">
+					左侧的 Tooltip</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">
+					顶部的 Tooltip</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+				 title="底部的 Tooltip">
+					底部的 Tooltip</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"
+				 title="右侧的 Tooltip">
+					右侧的 Tooltip</button>
+				
+			</div>
+
+
+		</div>
+
+     <script>
+     	$(function() {
+     		$("[data-toggle='tooltip']").tooltip();
+     	});
+     </script>
+	</body>
+</html>

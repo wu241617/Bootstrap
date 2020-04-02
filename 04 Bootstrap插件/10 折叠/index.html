@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 折叠（Collapse）插件</h3>
+				折叠（Collapse）插件可以很容易地让页面区域折叠起来。无论您用它来创建折叠导航还是内容面板，它都允许很多内容选项。<br>
+				1,data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。<br>
+				2,href 或 data-target 属性添加到父组件，它的值是子组件的 id。<br>
+				3,data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。
+			</div>
+
+			<div>
+				<h3 class="text-primary">创建可折叠的分组或折叠面板（accordion）</h3>
+
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									点击我进行展开，再次点击我进行折叠。第 1 部分 </a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+								cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+								vice lomo. </div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									点击我进行展开，再次点击我进行折叠。第 2 部分 </a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+								cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+								vice lomo. </div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									点击我进行展开，再次点击我进行折叠。第 3 部分 </a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+								cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+								vice lomo. </div>
+						</div>
+					</div>
+				</div>
+		
+			</div>
+            
+			<div>
+				<h3 class="text-primary">创建不带 accordion 标记的简单的可折叠组件（collapsible）</h3>
+				<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">简单的可折叠组件</button>
+				  <div id="demo" class="collapse in">
+				  Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+				  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+				  vice lomo.
+				 </div>
+			</div>
+			
+			
+		</div>
+
+	</body>
+</html>

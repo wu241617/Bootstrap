@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+		<!--meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"-->
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div>
+				<h2>HTML 5 文档类型（Doctype）</h2>
+				Bootstrap 使用了一些 HTML5 元素和 CSS 属性。为了让这些正常工作，您需要使用 HTML5 文档类型（Doctype）。
+				因此，请在使用 Bootstrap 项目的开头包含下面的代码段。
+			</div>
+			<div>
+				<h2>移动设备优先</h2>
+				为了让 Bootstrap 开发的网站对移动设备友好，确保适当的绘制和触屏缩放，
+				需要在网页的 head 之中添加 viewport meta 标签，如下所示：
+				<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+				width 属性控制设备的宽度。
+				假设您的网站将被带有不同屏幕分辨率的设备浏览，那么将它设置为 device-width 可以确保它能正确呈现在不同设备上。
+				initial-scale=1.0 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。
+				在移动设备浏览器上，通过为 viewport meta 标签添加 user-scalable=no 可以禁用其缩放（zooming）功能。
+				通常情况下，maximum-scale=1.0 与 user-scalable=no 一起使用。
+				这样禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。
+				注意，这种方式我们并不推荐所有网站使用，还是要看您自己的情况而定！
+
+				<!--meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"-->
+			</div>
+			<div>
+				<h2>响应式图像</h2>
+				<img src="..." class="img-responsive" alt="响应式图像">
+			</div>
+			<div>
+				<h2>全局显示、排版和链接</h2>
+				基本的全局显示
+				Bootstrap 3 使用 body {margin: 0;} 来移除 body 的边距。
+			</div>
+			<div>
+				<h2>排版</h2>
+				使用 @font-family-base、 @font-size-base 和 @line-height-base 属性作为排版样式。
+			</div>
+			<div>
+				<h2>链接样式</h2>
+				通过属性 @link-color 设置全局链接的颜色。
+			</div>
+			<div>
+				<h2>避免跨浏览器的不一致</h2>
+				Bootstrap 使用 Normalize 来建立跨浏览器的一致性。
+				Normalize.css 是一个很小的 CSS 文件，在 HTML 元素的默认样式中提供了更好的跨浏览器一致性。
+			</div>
+			<div>容器（Container）Container-fluid</div>
+			<div>
+				<h2>Bootstrap 浏览器/设备支持</h2>
+				Bootstrap 可以在最新的桌面系统和移动端浏览器中很好的工作。
+				旧的浏览器可能无法很好的支持。
+				* Bootstrap 支持 Internet Explorer 8 及更高版本的 IE 浏览器。
+				注意：Bootstrap4 放弃了对 IE8 以及 iOS 6 的支持，现在仅仅支持 IE9 以上 以及 iOS 7 以上版本的浏览器。
+			</div>
+		</div>
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				border:1px solid black;
+				min-height:100px;
+				margin: 50px 0;
+				padding:20px;
+			}
+		</style>
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 字体图标(Glyphicons)</h3>
+				什么是字体图标？
+				字体图标是在 Web 项目中使用的图标字体。虽然，Glyphicons Halflings 需要商业许可，
+				但是您可以通过基于项目的 Bootstrap 来免费使用这些图标。
+			    为了表示对图标作者的感谢，希望您在使用时加上 GLYPHICONS 网站的链接。<br>
+				<h3>用法:如需使用图标，只需要简单地使用下面的代码即可。请在图标和文本之间保留适当的空间</h3>
+				<code>&lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;</code>
+				<p>
+				   <button type="button" class="btn btn-default">
+				      <span class="glyphicon glyphicon-sort-by-attributes"></span>
+				   </button>
+				   
+				   <button type="button" class="btn btn-default">
+				      <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>
+				   </button>
+				   
+				   <button type="button" class="btn btn-default">
+				      <span class="glyphicon glyphicon-sort-by-order"></span>
+				   </button>
+				   
+				   <button type="button" class="btn btn-default">
+				      <span class="glyphicon glyphicon-sort-by-order-alt"></span>
+				   </button>
+			    </p>
+				
+				  <button type="button" class="btn btn-default btn-lg">
+				      <span class="glyphicon glyphicon-user"></span> User
+				  </button>
+				  
+				  <button type="button" class="btn btn-default btn-sm">
+				      <span class="glyphicon glyphicon-user"></span> User
+				  </button>
+				  
+				  <button type="button" class="btn btn-default btn-xs">
+				      <span class="glyphicon glyphicon-user"></span> User
+				  </button>
+				  
+			</div>
+	         <div>
+				 <h3 class="text-left text-primary">带有导航栏的字体图标</h3>
+				 
+				 <h4 class="text-primary">定制字体图标</h4>
+				 <button type="button" class="btn btn-primary btn-lg">
+				   <span class="glyphicon glyphicon-user"></span> User
+				 </button>
+				 
+				 <h4 class="text-primary">定制字体尺寸</h4>
+				 <button type="button" class="btn btn-primary btn-lg" style="font-size: 60px">
+				   <span class="glyphicon glyphicon-user"></span> User
+				 </button>
+				 
+				 <h4 class="text-primary">定制字体颜色</h4>
+				 <button type="button" class="btn btn-primary btn-lg" style="color: rgb(212, 106, 64);">
+				   <span class="glyphicon glyphicon-user"></span> User
+				 </button>
+				 
+				 <h4 class="text-primary">应用文本阴影</h4>
+				 <button type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;">
+				   <span class="glyphicon glyphicon-user"></span> User
+				 </button>
+			 </div>
+		</div>	
+	</body>
+</html>

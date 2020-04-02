@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 警告框（Alert）插件</h3>
+				Bootstrap 警告框是一个独立的组件，当用户操作上下文时为用户提供一些有效的信息警示框。<br>
+				警告框（Alert）消息大多是用来向终端用户显示诸如警告或确认消息的信息。
+				使用警告框（Alert）插件，您可以向所有的警告框消息添加可取消（dismiss）功能。<br>
+			</div>
+
+			<div>
+				<h3 class="text-primary">用法</h3>
+				您可以有以下两种方式启用警告框的可取消（dismissal）功能：<br>
+				1,通过 data 属性：通过数据 API（Data API）添加可取消功能，只需要向关闭按钮添加 data-dismiss="alert"，
+				就会自动为警告框添加关闭功能。<br>
+				2,通过 JavaScript：通过 JavaScript 添加可取消功能：$(".alert").alert()
+			</div>
+
+			<div>
+				<div class="alert alert-warning">
+					<a href="#" class="close" data-dismiss="alert">&times; </a>
+					<strong>警告！</strong>您的网络连接有问题。
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>

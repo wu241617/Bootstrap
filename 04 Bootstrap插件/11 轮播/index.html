@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 轮播（Carousel）插件</h3>
+				Bootstrap 轮播（Carousel）插件是一种灵活的响应式的向站点添加滑块的方式。除此之外，
+				内容也是足够灵活的，可以是图像、内嵌框架、视频或者其他您想要放置的任何类型的内容。<br>
+			</div>
+
+			<div>
+				<h3 class="text-primary">实例</h3>
+				下面是一个简单的幻灯片，使用 Bootstrap 轮播（Carousel）插件显示了一个循环播放元素的通用组件。
+				为了实现轮播，您只需要添加带有该标记的代码即可。不需要使用 data 属性，只需要简单的基于 class 的开发即可。<br>
+
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/pic-1.jpg" alt="First slide">
+							<div class="carousel-caption">图片 1</div>
+						</div>
+						<div class="item">
+							<img src="img/pic-2.jpg" alt="Second slide">
+							<div class="carousel-caption">图片 2</div>
+						</div>
+						<div class="item">
+							<img src="img/pic-3.jpg" alt="Third slide">
+							<div class="carousel-caption">图片 3</div>
+						</div>
+						<div class="item">
+							<img src="img/pic-4.jpg" alt="Third slide">
+							<div class="carousel-caption">图片 4</div>
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+				
+				<div>
+					<h3 class="text-primary">可选的标题</h3>
+					您可以通过 .item 内的 .carousel-caption 元素向幻灯片添加标题。只需要在该处放置任何可选的 HTML 即可，
+					它会自动对齐并格式化<br>
+				</div>
+			</div>
+ 
+            <div>
+				<h3 class="text-primary">用法</h3>
+				1,通过 data 属性：使用 data 属性可以很容易控制轮播（Carousel）的位置。<br>
+				
+				2,属性 data-slide 接受关键字 prev 或 next，用来改变幻灯片相对于当前位置的位置。<br>
+				
+				4,使用 data-slide-to 来向轮播床底一个原始滑动索引，data-slide-to="2" 将把滑块移动到一个特定的索引，索引从 0 开始计数。<br>
+				
+				5,data-ride="carousel" 属性用于标记轮播在页面加载时就开始动画播放。<br>
+				
+				6,通过 JavaScript：轮播（Carousel）可通过 JavaScript 手动调用，如下所示：$('.carousel').carousel() <br>
+				
+				<p>
+					<h3 class="text-primary">选项</h3>
+					有一些选项是通过 data 属性或 JavaScript 来传递的。<br>
+					<ul>
+						<li>data-interval	自动循环每个项目之间延迟的时间量。如果为 false，轮播将不会自动循环。</li>
+						<li>data-pause	鼠标进入时暂停轮播循环，鼠标离开时恢复轮播循环。</li>
+						<li>data-wrap	轮播是否连续循环。</li>
+					</ul>
+				</p>
+			</div>
+            
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary bg-danger">Bootstrap 缩略图</h3>
+				大多数站点都需要在网格中布局图像、视频、文本等。Bootstrap 通过缩略图为此提供了一种简便的方式。
+				使用 Bootstrap 创建缩略图的步骤如下：
+				<ul>
+					<li>在图像周围添加带有 class .thumbnail 的 a> 标签。</li>
+					<li>这会添加四个像素的内边距（padding）和一个灰色的边框。</li>
+					<li>当鼠标悬停在图像上时，会动画显示出图像的轮廓。</li>
+				</ul>
+				<div class="col-sm-6 col-md-3">
+					<a href="#" class="thumbnail">
+						<img src="img/pic-1.jpg" alt="通用的占位符缩略图">
+					</a>
+				</div>
+				
+				<div>
+					<h3 class="page-header">添加自定义的内容</h3>
+					现在我们有了一个基本的缩略图，我们可以向缩略图添加各种 HTML 内容，比如标题、段落或按钮。具体步骤如下：<br>
+					1,把带有  class .thumbnail 的 a> 标签改为 div>。<br>
+					2,在该 div> 内，您可以添加任何您想要添加的东西。由于这是一个 div>，我们可以使用默认的基于 span 的命名规则来调整大小。<br>
+					3,如果您想要给多个图像进行分组，请把它们放置在一个无序列表中，且每个列表项向左浮动。<br>
+					
+					   <div class="col-sm-6 col-md-3">
+					      <div class="thumbnail">
+					         <img src="img/pic-1.jpg" alt="通用的占位符缩略图">
+					      </div>
+					      <div class="caption">
+					         <h3>缩略图标签</h3>
+					         <p>一些示例文本。一些示例文本。</p>
+					         <p>
+					            <a href="#" class="btn btn-primary" role="button">按钮</a> 
+					            <a href="#" class="btn btn-default" role="button">按钮</a>
+					         </p>
+					      </div>
+					   </div>
+					   
+				</div>
+				
+			</div>
+
+	</body>
+</html>

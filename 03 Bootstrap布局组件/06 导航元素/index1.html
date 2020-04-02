@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-primary">下拉菜单</h3>
+				导航菜单与下拉菜单使用相似的语法。默认情况下，列表项的锚与一些数据属性协同合作来触发带有 .dropdown-menu class 的无序列表。
+				
+				<h3 class="text-primary">带有下拉菜单的标签</h3>
+				向标签添加下拉菜单的步骤如下：以一个带有 class .nav 的无序列表开始。添加 class .nav-tabs。
+				添加带有 .dropdown-menu class 的无序列表。
+				
+				<p>带有下拉菜单的标签</p>
+				<ul class="nav nav-tabs">
+				   <li class="active"><a href="#">Home</a></li>
+				   <li><a href="#">SVN</a></li>
+				   <li><a href="#">iOS</a></li>
+				   <li><a href="#">VB.Net</a></li>
+				   <li class="dropdown">
+				      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				         Java <span class="caret"></span>
+				      </a>
+				      <ul class="dropdown-menu">
+				         <li><a href="#">Swing</a></li>
+				         <li><a href="#">jMeter</a></li>
+				         <li><a href="#">EJB</a></li>
+				         <li class="divider"></li>
+				         <li><a href="#">分离的链接</a></li>
+				      </ul>
+				   </li>
+				   <li><a href="#">PHP</a></li>
+				</ul>
+				
+			</div>
+			
+			<div>
+				<h3 class="text-primary">带有下拉菜单的胶囊</h3>
+				步骤与创建带有下拉菜单的标签相同，只是需要把 .nav-tabs class 改为 .nav-pills，
+				
+				<p>带有下拉菜单的标签</p>
+				<ul class="nav nav-pills">
+				   <li class="active"><a href="#">Home</a></li>
+				   <li><a href="#">SVN</a></li>
+				   <li><a href="#">iOS</a></li>
+				   <li><a href="#">VB.Net</a></li>
+				   <li class="dropdown">
+				      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				         Java <span class="caret"></span>
+				      </a>
+				      <ul class="dropdown-menu">
+				         <li><a href="#">Swing</a></li>
+				         <li><a href="#">jMeter</a></li>
+				         <li><a href="#">EJB</a></li>
+				         <li class="divider"></li>
+				         <li><a href="#">分离的链接</a></li>
+				      </ul>
+				   </li>
+				   <li><a href="#">PHP</a></li>
+				</ul>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>

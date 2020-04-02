@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 按钮组</h3>
+				按钮组允许多个按钮被堆叠在同一行上。当你想要把按钮对齐在一起时，这就显得非常有用
+				您可以通过 Bootstrap 按钮（Button） 插件 添加可选的 JavaScript 单选框和复选框样式行为。
+				<ul class="list-unstyled">
+					<li>
+						.btn-groug,该 class 用于形成基本的按钮组。在 .btn-group 中放置一系列带有 class .btn 的按钮。
+					</li>
+					<li>
+						.btn-toolbar,该 class 有助于把几组 div class="btn-group"> 
+						结合到一个 div class="btn-toolbar"> 中，一般获得更复杂的组件。
+					</li>
+					<li>
+						.btn-group-lg, .btn-group-sm, .btn-group-xs	这些 class 可应用到整个按钮组的大小调整
+						，而不需要对每个按钮进行大小调整。
+					</li>
+					<li>
+						.btn-group-vertical	该 class 让一组按钮垂直堆叠显示，而不是水平堆叠显示。
+					</li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3 class="text-left text-primary">基本的按钮组</h3>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default">按钮 1</button>
+				  <button type="button" class="btn btn-default">按钮 2</button>
+				  <button type="button" class="btn btn-default">按钮 3</button>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">按钮工具栏</h3>
+				<div class="btn-toolbar" role="toolbar">
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-default">按钮 1</button>
+					  <button type="button" class="btn btn-default">按钮 2</button>
+					  <button type="button" class="btn btn-default">按钮 3</button>
+				 </div>
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-default">按钮 4</button>
+					  <button type="button" class="btn btn-default">按钮 5</button>
+					  <button type="button" class="btn btn-default">按钮 6</button>
+				  </div>
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-default">按钮 7</button>
+					  <button type="button" class="btn btn-default">按钮 8</button>
+					  <button type="button" class="btn btn-default">按钮 9</button>
+				  </div>
+				</div>
+			</div>
+			
+			
+			<div>
+				<h3 class="text-primary">按钮大小</h3>
+				<div class="btn-group btn-group-lg">
+				  <button type="button" class="btn btn-default">按钮 1</button>
+				  <button type="button" class="btn btn-default">按钮 2</button>
+				  <button type="button" class="btn btn-default">按钮 3</button>
+				 </div>
+				  <div class="btn-group btn-group-sm">
+				  <button type="button" class="btn btn-default">按钮 4</button>
+				  <button type="button" class="btn btn-default">按钮 5</button>
+				  <button type="button" class="btn btn-default">按钮 6</button>
+				</div>
+				  <div class="btn-group btn-group-xs">
+				  <button type="button" class="btn btn-default">按钮 7</button>
+				  <button type="button" class="btn btn-default">按钮 8</button>
+				  <button type="button" class="btn btn-default">按钮 9</button>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">嵌套</h3>
+				您可以在一个按钮组内嵌套另一个按钮组，即，在一个 .btn-group 内嵌套另一个 .btn-group 。
+				当您想让下拉菜单与一系列按钮组合使用时，就会用到这个。<br>
+				
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default">按钮 1</button>
+				  <button type="button" class="btn btn-default">按钮 2</button>
+				
+				  <div class="btn-group">
+				    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				      下拉<span class="caret"></span>
+				    </button>
+				    <ul class="dropdown-menu">
+				      <li><a href="#">下拉链接 1</a></li>
+				      <li><a href="#">下拉链接 2</a></li>
+				    </ul>
+				  </div>
+				</div>
+				
+			</div>
+			
+			
+			<div>
+				<h3 class="text-primary">垂直的按钮组</h3>
+				<div class="btn-group btn-group-vertical">
+					<button type="button" class="btn btn-default">按钮1</button>
+					<button type="button" class="btn btn-default">按钮2</button>
+					
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							下拉<span></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">下拉链接 1</a></li>
+							<li><a href="#">下拉链接 2</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p style="height:50px;"></p>
+		</div>
+		
+	</body>
+</html>

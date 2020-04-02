@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 引入Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+                <!-- bootstrap的javascript插件--需要引用jQuery -->
+		<script src="bootstrap/js/jquery.min.js"></script>
+		
+		<!--包括所有已编译的插件-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h3 class="text-center text-primary">Bootstrap 分页</h3>
+				分页（Pagination），是一种无序列表，Bootstrap 像处理其他界面元素一样处理分页。
+				<br>
+				<ul class="list-unstyled">
+					<li>.pagination	添加该 class 来在页面上显示分页。</li>
+					<li>.disabled, .active	您可以自定义链接，通过使用 .disabled 来定义不可点击的链接
+					，通过使用 .active 来指示当前的页面。</li>
+					<li>.pagination-lg, .pagination-sm	使用这些 class 来获取不同大小的项。</li>
+				</ul>
+			</div>
+			
+			
+			<div>
+				<h3 class="text-primary">默认的分页</h3>
+				下面的实例演示了上表中所讨论的 class .pagination 的用法：<br>
+				
+				<ul class="pagination">
+				  <li><a href="#">&laquo;</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">分页的状态</h3>
+				下面的实例演示了上表中所讨论的 class .disabled、.active 的用法：<br>
+				
+				<ul class="pagination">
+				  <li><a href="#">&laquo;</a></li>
+				  <li class="active"><a href="#">1</a></li>
+				  <li class="disabled"><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">分页的大小</h3>
+				下面的实例演示了上表中所讨论的 class .pagination-* 的用法：<br>
+				
+				<ul class="pagination pagination-lg">
+				  <li><a href="#">&laquo;</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul><br>
+				<ul class="pagination">
+				  <li><a href="#">&laquo;</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul><br>
+				<ul class="pagination pagination-sm">
+				 <li><a href="#">&laquo;</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			
+			
+			<div>
+				<h3 class="text-primary">翻页（Pager）</h3>
+				如果您想要创建一个简单的分页链接为用户提供导航，可通过翻页来实现。与分页链接一样，
+				翻页也是无序列表。默认情况下，链接是居中显示<br>
+				
+				<ol>
+					<li>.pager	添加该 class 来获得翻页链接</li>
+					<li>.previous, .next	使用 class .previous 把链接向左对齐，使用 .next 把链接向右对齐。</li>
+					<li>.disabled	添加该 class 来获得一个颜色变淡的外观。</li>
+				</ol>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">默认的翻页</h3>
+				下面的实例演示了上表中所讨论的 class .pager 的用法：<br>
+				
+				<ul class="pager">
+				  <li><a href="#">Previous</a></li>
+				  <li><a href="#">Next</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3 class="text-primary">对齐的链接</h3>
+				下面的实例演示了上表中所讨论的 class .previous、.next 的用法：<br>
+				
+				<ul class="pager">
+				  <li class="previous"><a href="#">&larr; Older</a></li>
+				  <li class="next"><a href="#">Newer &rarr;</a></li>
+				</ul>
+			</div>
+			
+			
+			<div>
+				<h3 class="text-primary">翻页的状态</h3>
+				下面的实例演示了上表中所讨论的 class .disabled 的用法：<br>
+				
+				<ul class="pager">
+				  <li class="previous disabled"><a href="#">&larr; Older</a></li>
+				  <li class="next"><a href="#">Newer &rarr;</a></li>
+				</ul>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>
